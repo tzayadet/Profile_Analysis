@@ -1,37 +1,44 @@
-# Profile Analysis · Exploración de preferencias
+<p align="center">
+  <img src="https://img.shields.io/badge/INTERACTIVE_TOOL-PROFILE_ANALYSIS-101010?style=for-the-badge&labelColor=050805&color=00FF41" alt="Profile Analysis"/>
+  <img src="https://img.shields.io/badge/FRONTEND-VANILLA_JS-101010?style=for-the-badge&logo=javascript&logoColor=00FF41" alt="JavaScript"/>
+</p>
 
-[![Quality checks](https://github.com/tzayadet/Profile_Analysis/actions/workflows/quality.yml/badge.svg)](https://github.com/tzayadet/Profile_Analysis/actions/workflows/quality.yml) [![GitHub Pages](https://github.com/tzayadet/Profile_Analysis/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/tzayadet/Profile_Analysis/actions/workflows/jekyll-gh-pages.yml)
+# Profile Analysis
 
-Cuestionario interactivo de autoexploración que organiza respuestas en cuatro dimensiones de preferencia y genera una de 16 descripciones tipológicas.
+Cuestionario interactivo de autoexploración que organiza respuestas en cuatro dimensiones de preferencia y genera una descripción tipológica. Todo el procesamiento se realiza en el navegador.
 
-## Demo
+<p align="center">
+  <a href="https://tzayadet.github.io/Profile_Analysis/"><strong>LIVE DEMO ↗</strong></a> ·
+  <a href="https://github.com/tzayadet/Profile_Analysis"><strong>SOURCE CODE</strong></a>
+</p>
 
-https://tzayadet.github.io/Profile_Analysis/
+[![Quality checks](https://github.com/tzayadet/Profile_Analysis/actions/workflows/quality.yml/badge.svg)](https://github.com/tzayadet/Profile_Analysis/actions/workflows/quality.yml) · [![GitHub Pages](https://github.com/tzayadet/Profile_Analysis/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/tzayadet/Profile_Analysis/actions/workflows/jekyll-gh-pages.yml)
 
-## Funcionamiento
+## Features
 
-- 60 afirmaciones con una escala de respuesta de cinco niveles.
-- Cuatro dimensiones con polos opuestos: E/I, S/N, T/F y J/P.
+- 60 afirmaciones con escala de respuesta de cinco niveles.
+- Cuatro dimensiones de preferencia: E/I, S/N, T/F y J/P.
 - Cálculo local de puntuaciones y generación de un perfil descriptivo.
-- Guardado de progreso en `localStorage` para poder continuar en el mismo navegador.
-- Copia y exportación JSON de los resultados.
-- Borrado de la sesión y de las respuestas guardadas.
+- Guardado de progreso en `localStorage`.
+- Copia y exportación JSON de resultados.
+- Eliminación de respuestas y sesión guardadas.
 
-## Aviso de validez
+## Use it
 
-Este proyecto es un ejercicio de programación y autoexploración. Su cuestionario y sus perfiles **no constituyen un instrumento psicométrico validado**. No mide inteligencia, capacidad cognitiva, salud mental ni idoneidad profesional; tampoco sustituye una evaluación psicológica.
+Abre la [demo web](https://tzayadet.github.io/Profile_Analysis/) en un navegador moderno. No requiere instalación, cuenta ni backend.
 
-No debe utilizarse para selección de personal, clasificación de candidatos, diagnóstico clínico ni decisiones que afecten a otras personas.
+## Privacy
 
-## Privacidad
+- No requiere nombre, correo ni identificadores personales.
+- No envía las respuestas a servicios externos.
+- El progreso se guarda localmente mediante `localStorage`.
+- La exportación JSON se descarga en el dispositivo del usuario.
 
-- No requiere cuenta ni recoge nombre, correo o identificadores personales.
-- No utiliza backend ni envía respuestas a servicios externos.
-- Las respuestas se guardan localmente en el navegador mediante `localStorage`.
-- Usa «Borrar» para eliminar los datos guardados en ese navegador.
-- La exportación JSON se descarga localmente y queda bajo control de quien la realiza.
+## Methodological scope
 
-## Tecnologías
+Es un ejercicio de programación y autoexploración. El cuestionario y sus perfiles no constituyen un instrumento psicométrico validado. No mide inteligencia, capacidad cognitiva, salud mental ni idoneidad profesional. No debe utilizarse para selección de personal, diagnóstico ni decisiones que afecten a otras personas.
+
+## Technology
 
 - HTML5
 - CSS3
@@ -39,7 +46,7 @@ No debe utilizarse para selección de personal, clasificación de candidatos, di
 - Web Storage API
 - Clipboard API
 
-## Validación
+## Validation
 
 Con Python 3.11 y Node.js 20 o superior:
 
@@ -47,10 +54,12 @@ Con Python 3.11 y Node.js 20 o superior:
 python scripts/validate_site.py
 ```
 
-La validación comprueba el número de preguntas y perfiles, verifica que no haya dependencias JavaScript remotas ni llamadas de red y ejecuta `node --check` sobre el script de la aplicación.
+La validación comprueba la estructura del cuestionario, los perfiles y el JavaScript de la aplicación. GitHub Actions ejecuta los controles en push y pull requests.
 
-GitHub Actions ejecuta la validación en cada push y pull request.
+## Deployment
 
-## Licencia
+Sitio estático publicado mediante GitHub Pages. No requiere backend.
 
-Consulta [LICENSE](LICENSE).
+## License
+
+See [LICENSE](LICENSE).
