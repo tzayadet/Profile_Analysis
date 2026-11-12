@@ -1,5 +1,7 @@
 # Profile Analysis · Exploración de preferencias
 
+[![Quality checks](https://github.com/tzayadet/Profile_Analysis/actions/workflows/quality.yml/badge.svg)](https://github.com/tzayadet/Profile_Analysis/actions/workflows/quality.yml) [![GitHub Pages](https://github.com/tzayadet/Profile_Analysis/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/tzayadet/Profile_Analysis/actions/workflows/jekyll-gh-pages.yml)
+
 Cuestionario interactivo de autoexploración que organiza respuestas en cuatro dimensiones de preferencia y genera una de 16 descripciones tipológicas.
 
 ## Demo
