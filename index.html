@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evaluación de Perfil Cognitivo</title>
+  <title>Exploración de Preferencias Personales</title>
   <style>
     /* ===== CORE VARIABLES ===== */
     :root {
@@ -223,16 +223,33 @@
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
     }
+    .disclaimer {
+      margin: 0 0 22px;
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      color: var(--text-secondary);
+      background: var(--surface);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    .disclaimer strong { color: var(--text-primary); }
   </style>
 </head>
 <body>
-  <div id="app" role="application" aria-label="Evaluación de Perfil Cognitivo">
+  <div id="app" role="application" aria-label="Exploración de preferencias personales">
     <header class="app-header">
-      <h1 class="app-title">Evaluación de Perfil</h1>
-      <p class="app-subtitle">Análisis cognitivo</p>
+      <h1 class="app-title">Exploración de Perfil</h1>
+      <p class="app-subtitle">Cuestionario tipológico orientativo · 16 perfiles</p>
     </header>
 
     <section id="menu" class="app-content screen" aria-live="polite">
+      <p class="disclaimer" role="note">
+        <strong>Importante:</strong> este cuestionario es un ejercicio de autoexploración basado en cuatro dimensiones de preferencia. No es un instrumento psicométrico validado, un diagnóstico clínico ni una evaluación de aptitud. No debe utilizarse para selección laboral ni para tomar decisiones sobre otras personas.
+        <br><br>
+        Tus respuestas se guardan únicamente en el almacenamiento local de este navegador. No se envían a un servidor. Puedes eliminarlas con el botón «Borrar».
+      </p>
       <div class="menu-actions">
         <button class="btn btn-primary" onclick="startTest()">Iniciar</button>
         <button class="btn" id="btnResume" onclick="resumeTest()" hidden>Continuar</button>
